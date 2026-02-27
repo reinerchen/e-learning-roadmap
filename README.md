@@ -66,6 +66,23 @@
     * 被動狀態：I *had* the router *fixed*. (物 + V.p.p.)
     * **說明：** 根據接受端是「主動執行」還是「被動處理」來切換介面。
 
+## 模組三點二：連綴動詞介面 (Linking Verbs Protocol)
+* 核心判別規則：連綴動詞不是「動作」，而是「等號 (=)」，啟動 `主詞 = 主詞補語` 的狀態賦值模式。
+    * **例句：** The system *runs* stably, but the system *is* stable.
+    * **說明：** runs 是動作動詞，可接副詞 stably；is 是連綴動詞，後方必須接形容詞 stable。
+* 連綴動詞補語限制：連綴動詞後方不可接副詞，必須接「形容詞（狀態）」或「名詞（身分/類別）」。
+    * **例句：** The server must remain *secure* at all times. (非 securely)
+    * **說明：** remain 屬於連綴動詞，語意是 `The server = secure`，不是「安全地做某動作」。
+* 存在狀態類 (State of Being)：be / remain / stay / keep。
+    * **例句：** The platform *remains reliable* during peak hours.
+    * **說明：** remains 連接主詞與狀態屬性 reliable，維持等號關係。
+* 狀態改變類 (Change of State)：become / turn / get / grow。
+    * **例句：** The process has become highly *efficient*.
+    * **說明：** become 描述狀態轉換，後方用形容詞 efficient 表示新狀態。
+* 感官認知類 (Senses & Perception)：seem / appear / look / sound / feel。
+    * **例句：** The new UI design looks very *beautiful*.
+    * **說明：** looks 此處為「看起來」的狀態連接，不是「看」的動作，因此用形容詞 beautiful。
+
 ## 模組三點五：非限定動詞（動詞封裝協定 - Verb Wrapper Protocol）
 * 不定詞 (to + V)：非同步任務 (Async Task)，代表「尚未發生」或「目的」。
     * **例句：** We plan *to migrate* the database next week.
