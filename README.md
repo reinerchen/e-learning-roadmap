@@ -10,29 +10,37 @@
 ## 模組一：詞性基礎與核心概念 (Parts of Speech & Core Concepts)
 * 詞族與詞性判斷 (Lexical Families & POS Parsing Algorithm)：遇到空格先掃描前後綴 (Suffix) 判定型態。名詞 (-tion, -ment, -ance)、動詞 (-ize, -en, -ate)、形容詞 (-ive, -able, -al)、副詞 (-ly)。
     * **例句：** The new *management* team is highly *effective*.
+    * **進階例句：** The policy *revision* was handled *professionally*.
     * **說明：** 看到定冠詞 The 與名詞 team 之間，或 be 動詞之後，能迅速透過 -ment 判定為名詞，-ive 判定為形容詞。
 * 代名詞規則：所有格有專屬單字（hers, yours, its），嚴禁畫蛇添足加上 's。
     * **例句：** The company updated *its* policy, not *theirs*.
+    * **進階例句：** This laptop is *hers*, and that one is *mine*.
     * **說明：** its 是專屬所有格，it's 是 it is 的縮寫，兩者在系統中完全不同。
 * 冠詞發音判定：a / an 完全取決於單字開頭的「發音」，而非拼字。
     * **例句：** It takes *an* hour to reach *a* university.
+    * **進階例句：** We need *an* MBA graduate and *a* useful template.
     * **說明：** hour 字首 h 不發音（母音開頭）；university 字首發 /j/（子音開頭），避開視覺陷阱。
 * 定冠詞與零冠詞系統 (Articles System)：the 為絕對記憶體指標 (Absolute Pointer)，用於特指；零冠詞代表全域抽象變數。
     * **例句：** *Water* is essential, but *the water* in this cup is hot.
+    * **進階例句：** *Computers* are common, but *the computers* in Lab A are new.
     * **說明：** 前者是全域泛指（不可數零冠詞），後者是加上 location pointer 的特指。
 * 不可數名詞限制：抽象概念或整體總稱永遠視為單數，嚴禁加 s 或 a/an。
     * **例句：** I need some *information* and *advice* for the project.
+    * **進階例句：** Much *equipment* was damaged during shipping.
     * **說明：** information / advice / equipment 為不可分割的資料流，強加複數 s 會導致編譯錯誤。
 
 ## 模組一點五：一致性檢核協定 (Consistency Check Protocol)
 * 主謂一致性 (Subject-Verb Agreement)：主程式（主詞）與動詞的單複數型別必須完美匹配，不受中間修飾語干擾。
     * **例句：** The *quality* of the new software products *is* excellent.
+    * **進階例句：** A list of required documents *has* been posted.
     * **說明：** 動詞 is 只對齊真正的 Head Noun (quality)，直接無視介系詞片語 (of the products) 的干擾。
 * 代名詞參照 (Pronoun Reference)：指標變數必須精準對應記憶體位置（先行詞），單複數與性別不可混淆。
     * **例句：** *Each* of the managers must submit *his or her* report.
+    * **進階例句：** Neither of the proposals achieved *its* target.
     * **說明：** Each 是單數運算子，後方代名詞必須降級為單數 (his/her)，不可使用 their。
 * 平行結構 (Parallelism / Load Balancing)：連接詞 (and, or, but) 前後的資料型態與結構必須完全對稱。
     * **例句：** The system is *fast*, *reliable*, and *easy* to use.
+    * **進階例句：** She enjoys *reading reports*, *analyzing data*, and *writing summaries*.
     * **說明：** 連接詞串聯的三個端點皆為形容詞，保持系統權重與結構的完美平衡。
 
 ## 模組二：介系詞與邏輯連接詞 (Prepositions & Logical Connectors)
@@ -43,35 +51,67 @@
     * **說明：** 根據維度的縮小，從 3D 空間 (in) 降維至 2D 平面 (on) 再到 1D 精確點 (at)。
 * 邏輯連接詞互斥原則：Because 與 So 絕對互斥；Although 與 But 絕對互斥。
     * **例句：** *Because* the server crashed, the system went offline.
+    * **進階例句：** *Although* the deadline was tight, the team finished on time.
     * **說明：** 英文邏輯不允許同一個句子出現兩個主控權連接詞，有因(Because)就不能有果(So)。
 * 副詞子句連接協定 (Adverbial Connectors)：精準定義觸發條件。
     * **例句：** The deployment will proceed *unless* we find a critical bug.
+    * **進階例句：** *While* the scan is running, please do not shut down the device.
     * **說明：** unless (= if not) 設下反向執行條件；while 記錄同步發生的時間序列。
 
 ## 模組三：動詞系統與時態規則 (Verb System & Tense Rules)
 * 動詞層級分類：Be動詞(=)、助動詞(功能性)、一般動詞(具體動作)。
     * **例句：** He *does not like* the new UI, but he *is trying* to adapt.
+    * **進階例句：** They *were* anxious, but they *could* solve the issue quickly.
     * **說明：** does (助動詞) 負責否定，like 為原形；is (Be動詞) 負責建立正在進行的狀態。
 * 時態三大鐵律與 12 時態核心：
     * **例句：** The engineer *will have finished* the code by tomorrow.
+    * **進階例句：** By the time the client arrives, we *will be testing* the new feature.
     * **說明：** 第一動詞 will 標記「未來」；have 標記「完成」；finished (V.p.p.) 強制配合 have。三個鐵律完美套用。
 * 完成式快取 (Perfect Tense Cache)：記錄截至某時間點的累積數據。
     * **例句：** I *have worked* here for three years.
+    * **進階例句：** She *had already left* when the email arrived.
     * **說明：** 從過去到「現在」的狀態日誌，尚未中斷。
 * 情態動詞權重 (Modal Logic)：表達執行機率與系統權限。
     * **例句：** You *must* reboot the server, or it *might* crash again.
+    * **進階例句：** Employees *should* verify data, but interns *may* request support.
     * **說明：** must 是最高權限的強制力 (100%)，might 是低權限的推測 (20%)。
 * 使役動詞用法 (Causative Verbs)：
-    * 主動委託：I *had* the technician *fix* the router. (人 + 原形)
-    * 被動狀態：I *had* the router *fixed*. (物 + V.p.p.)
-    * **說明：** 根據接受端是「主動執行」還是「被動處理」來切換介面。
+    * 核心公式：
+      `have + 人 + 原形`、`have + 物 + V.p.p.`
+      `make + 人 + 原形`
+      `let + 人 + 原形`
+      `get + 人 + to + V`、`get + 物 + V.p.p.`
+      `help + 人 + (to) + V`
+    * **have（安排/委託）**：
+      I *had* the technician *fix* the router. (我安排技術員去修)
+      I *had* the router *fixed*. (我把路由器拿去修好)
+    * **make（強制）**：
+      The manager *made* the team *rewrite* the report.
+      *說明：* make 帶有「強制權限」，後方用原形動詞，不用 to。
+    * **let（允許）**：
+      The supervisor *let* us *leave* early.
+      *說明：* let 是「放行權限」，結構同樣是 人 + 原形。
+    * **get（說服/促成）**：
+      I *got* the intern *to update* the spreadsheet.
+      We *got* the server *repaired* before noon.
+      *說明：* get 在主動促成時要接 `to + V`；處理物件時常用 `物 + V.p.p.`。
+    * **help（協助）**：
+      This checklist *helped* me *(to) avoid* common grammar mistakes.
+      *說明：* help 後可用 `to + V` 或省略 to，兩者都正確。
+    * **易錯提醒（TOEIC 常考）**：
+      `make/let/have + 人 + 原形`（不可加 to）
+      `get + 人 + to + V`（必須有 to）
+      `have/get + 物 + V.p.p.`（受動處理，常見於服務、維修、文件處理）
+    * **總結：** 先判斷主詞對受詞的權限類型（強制/允許/委託/促成/協助），再套用對應句型。
 
 ## 模組三點二：連綴動詞介面 (Linking Verbs Protocol)
 * 核心判別規則：連綴動詞不是「動作」，而是「等號 (=)」，啟動 `主詞 = 主詞補語` 的狀態賦值模式。
     * **例句：** The system *runs* stably, but the system *is* stable.
+    * **進階例句：** The soup *tastes* salty. (`soup = salty`)
     * **說明：** runs 是動作動詞，可接副詞 stably；is 是連綴動詞，後方必須接形容詞 stable。
 * 連綴動詞補語限制：連綴動詞後方不可接副詞，必須接「形容詞（狀態）」或「名詞（身分/類別）」。
     * **例句：** The server must remain *secure* at all times. (非 securely)
+    * **進階例句：** She became a *manager* last year. (名詞補語)
     * **說明：** remain 屬於連綴動詞，語意是 `The server = secure`，不是「安全地做某動作」。
 * 存在狀態類 (State of Being)：be / remain / stay / keep。
     * **例句：** The platform *remains reliable* during peak hours.
@@ -86,37 +126,64 @@
 ## 模組三點五：非限定動詞（動詞封裝協定 - Verb Wrapper Protocol）
 * 不定詞 (to + V)：非同步任務 (Async Task)，代表「尚未發生」或「目的」。
     * **例句：** We plan *to migrate* the database next week.
+    * **進階例句：** He studied hard *to pass* the certification test.
     * **說明：** plan 帶有強烈的未來意圖，必須接 to-V。
 * 動名詞 (V-ing)：狀態快照 (Snapshot)，代表「經驗」或「已存在之程序」。
     * **例句：** We should avoid *using* deprecated functions.
+    * **進階例句：** She enjoys *working* with international clients.
     * **說明：** avoid 是針對既有、已知的不良行為進行防堵，必須接 V-ing。
 * 動態記憶體分配：stop / remember / forget。
     * **例句：** I remembered *to lock* the door (記得去鎖) vs. I remembered *locking* the door (記得鎖過)。
+    * **進階例句：** He stopped *to smoke* (停下來去抽菸) vs. He stopped *smoking* (戒菸)。
     * **說明：** 根據 Task 是 pending (to-V) 還是 executed (V-ing) 改變語意。
 
 ## 模組四：子句結構與修飾語 (Clause Structures & Modifiers)
 * 名詞子句 (Noun Clauses)：語序還原為主詞+動詞。
     * **例句：** I don't know *where the file is*. (非 where is the file)
+    * **進階例句：** What we need *is* more testing time.
     * **說明：** 子句一旦封裝為名詞，必須解除疑問句的倒裝結構，回歸一般陳述語序。
 * 關係子句 (形容詞子句) 與關係副詞：
     * **例句：** The office *where* I work is huge. / The laptop *which* I bought is fast.
+    * **進階例句：** The engineer *who* fixed the bug received praise.
     * **說明：** where (= in which) 代替副詞環境變數；which 代替名詞物件。若 which 當受詞可直接省略 (The laptop I bought)。
 
 ## 模組五：分詞構句 (Participle Phrases - 句型壓縮協議)
 * 標準壓縮 SOP 與關係子句縮減：
     * **例句：** *Feeling* tired, he went to bed early. (原：Because he felt tired...)
+    * **進階例句：** *Using* a shared template, the team reduced errors.
     * **說明：** 主詞 he 一致，刪除連接詞與主詞，主動動詞 felt 轉為 Feeling。
 * 關係子句縮減 (Reduced Relatives)：
     * **例句：** The report *(which was) written* by AI is accurate.
+    * **進階例句：** Students *taking* the advanced class must submit weekly logs.
     * **說明：** 直接刪除 which was，留下 V.p.p (written) 作為被動的後位修飾。
 
 ## 模組六：假設語氣與條件句 (Subjunctive Mood - 虛擬機環境系統)
 * 條件句與核心偏移公式 (`Reality - 1 = Subjunctive`)：透過時態往過去偏移建立距離。
     * **例句：** If I *had* a backup, I *would restore* the data. (但現在沒有)
+    * **進階例句：** If she *were* more careful, she wouldn't make that mistake.
     * **說明：** 對「現在」事實的腦補，時態退一格變為過去式 (had)。
 * 強制還原協定 (Mandatory Subjunctive)：Admin 指令觸發。
     * **例句：** The manager insisted that the issue *(should) be* resolved immediately.
+    * **進階例句：** It is essential that every report *be* submitted by Friday.
     * **說明：** insist, suggest 等強烈指令後面的 that 子句，動詞強制回歸原形 (Base Verb)，忽略前面的時態。
+
+## 模組七：高頻補丁課 (TOEIC Hotfix Class)
+* 時態同步協定 (Tense Synchronization in Noun Clauses)：當主程式動詞是過去式（said, told, thought），封裝的名詞子句時態必須強制降維一格 (Backshift)。
+    * **例句：** She said that she *would* join the meeting. (原始直述：will)
+    * **進階例句：** He explained that the server *had crashed* the night before.
+    * **說明：** 公式為 `will -> would`、`can -> could`、現在式 -> 過去式，確保主從時態一致。
+* 雙星配對協定 (Correlative Conjunctions)：成對連接詞必須像括號一樣完整配對，禁止混搭。
+    * **例句：** *Either* the manager *or* the assistant will respond.
+    * **進階例句：** *Not only* did she apologize, but she *also* offered a refund.
+    * **說明：** 可用配對只有 `either...or`、`neither...nor`、`both...and`、`not only...but also`，任何錯配都視為結構錯誤。
+* 驗證標籤協定 (Tag Questions)：附加問句是 True/False 驗證介面，前句與標籤必須正負互斥，主詞需代換為代名詞。
+    * **例句：** He won't miss the deadline, *will he*?
+    * **進階例句：** The files were uploaded, *weren't they*?
+    * **說明：** 前肯後否、前否後肯是固定邏輯；助動詞與時態需與主句同步。
+* 比較級權重運算 (Comparative Degree System)：看到 `than` 時，前方必須綁定比較級型態，且比較對象型別要一致。
+    * **例句：** This device is *more reliable than* the old one.
+    * **進階例句：** The new policy is *stricter than* the previous one.
+    * **說明：** 只接受 `Adj-er + than` 或 `more + Adj + than`；`as ... than`、`-er ... as` 屬於非法組合。
 
 ---
 
@@ -198,6 +265,6 @@
 # Next Action
 
 請先向學生簡短打招呼，確認你已經載入上述 V4.0 進度，並肯定學生的學習成果。
-接著，引導學生進入下一個進階階段的【模組七：被動語態與狀態判別 (Passive Voice & State Detection)】。
+接著，引導學生進入下一個進階階段的【模組八：被動語態與狀態判別 (Passive Voice & State Detection)】。
 請詢問學生：是否準備好挑戰如何精準判讀「執行者」與「受動者」的權限交換，以及破解多益最愛考的「被動式隱形成分」？
 等待學生的確認後，再開始教學。
